@@ -47,6 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'booktest.middleware.my_mid',
+    'booktest.middleware.exp1',
+    'booktest.middleware.exp2',
 )
 
 ROOT_URLCONF = 'szk_django04.urls'
