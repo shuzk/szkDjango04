@@ -19,5 +19,5 @@ class exp1:
 
 
 class exp2:
-    def process_exception(self, exception):
+    def process_exception(self, request, exception):
         print("-----------exp2")
