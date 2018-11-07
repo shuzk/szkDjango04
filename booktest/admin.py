@@ -9,6 +9,11 @@ class AreaAdmin(admin.ModelAdmin):
     actions_on_top = True
     actions_on_bottom = True
 
+    list_display = ["id", "atitle", "title", "parent"]
+
+
+
+
 
 admin.site.register(AreaInfo, AreaAdmin)
 # admin.site.register(AreaInfo)
