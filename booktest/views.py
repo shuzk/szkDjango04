@@ -6,7 +6,7 @@ from django.shortcuts import render
 def index(request):
     # return HttpResponse("这是booktest应用的index")
     print("---------index---------------")
-    raise Exception("自定义异常")
+    # raise Exception("自定义异常")
     return render(request, "booktest/index.html")
 
 
