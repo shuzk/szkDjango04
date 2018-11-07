@@ -11,6 +11,8 @@ class AreaAdmin(admin.ModelAdmin):
 
     list_display = ["id", "atitle", "title", "parent"]
 
+    list_filter = ["atitle"]
+
 
 
 
