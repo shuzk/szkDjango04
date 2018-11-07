@@ -13,6 +13,8 @@ class AreaAdmin(admin.ModelAdmin):
 
     list_filter = ["atitle"]
 
+    search_fields = ["atitle"]
+
 
 
 
