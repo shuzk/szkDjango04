@@ -15,7 +15,13 @@ class AreaAdmin(admin.ModelAdmin):
 
     search_fields = ["atitle"]
 
-    fields = ["aParent", "atitle"]
+    # fields = ["aParent", "atitle"]
+
+    fieldsets = (
+        ("基本", {"fields": ["atitle"]}),
+        ("高级", {"fields": ["aParent"]})
+    )
+
 
 
 
