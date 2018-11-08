@@ -1,7 +1,18 @@
 from django.contrib import admin
 from booktest.models import *
 
+
 # Register your models here.
+
+
+# class AreaStackedInline(admin.StackedInline):
+#     model = AreaInfo  # 关联子对象
+#     extra = 2  # 额外编辑两个子对象
+
+
+class AreaTabularInline(admin.TabularInline):
+    model = AreaInfo  # 关联子对象
+    extra = 2  # 额外编辑3个子对象
 
 
 class AreaAdmin(admin.ModelAdmin):
@@ -22,9 +33,8 @@ class AreaAdmin(admin.ModelAdmin):
         ("高级", {"fields": ["aParent"]})
     )
 
-
-
-
+    # inlines = [AreaStackedInline]
+    inlines = [AreaTabularInline]
 
 
 admin.site.register(AreaInfo, AreaAdmin)
