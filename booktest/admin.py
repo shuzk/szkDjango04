@@ -37,7 +37,7 @@ class AreaAdmin(admin.ModelAdmin):
     inlines = [AreaTabularInline]
 
 
-admin.site.register(AreaInfo, AreaAdmin)
+admin.site.register(AreaInfo, AreaAdmin)  #
 # admin.site.register(AreaInfo)
 #
 #
