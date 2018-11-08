@@ -10,6 +10,7 @@ class AreaInfo(models.Model):
     # 将方法作为列
     def title(self):
         return self.atitle
+
     title.admin_order_field = "atitle"
 
     title.short_description = "区域名称"
@@ -18,4 +19,8 @@ class AreaInfo(models.Model):
         if self.aParent is None:
             return ""
         return self.aParent.atitle
+
     parent.short_description = "父级区域名称"
+
+    def __str__(self):
+        return self.atitle

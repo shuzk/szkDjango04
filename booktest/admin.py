@@ -15,6 +15,8 @@ class AreaAdmin(admin.ModelAdmin):
 
     search_fields = ["atitle"]
 
+    fields = ["aParent", "atitle"]
+
 
 
 
