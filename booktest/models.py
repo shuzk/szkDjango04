@@ -24,3 +24,8 @@ class AreaInfo(models.Model):
 
     def __str__(self):
         return self.atitle
+
+
+class PicTest(models.Model):
+    pic = models.ImageField(upload_to="booktest/")
+
